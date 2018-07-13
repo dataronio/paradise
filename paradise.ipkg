@@ -1,0 +1,5 @@
+package paradise
+
+modules = Elabs
+
+-- opts = "-p idris-free -p derive"
