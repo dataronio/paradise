@@ -30,5 +30,6 @@ numericDiffExpr x y z = numericDf (exp2f x y) z
 -- data W : (A : Type)->(B : A -> Type)->Type where
 --  sup : {A : Type}->{B : A -> Type}->(a : A)-> (y : {A : Type}->(x : A)->B x -> W x ) -> W x y
 -- https://github.com/agda/agda-stdlib/blob/master/src/Data/W.agda
+-- https://mazzo.li/epilogue/index.html%3Fp=324.html
 data W : (A : Type)-> (B : A -> Type) -> Type where
   sup : {A : Type}-> {B : A -> Type}->(x : A) -> (f : B x -> W A B) -> W A B
