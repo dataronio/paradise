@@ -53,3 +53,10 @@ addImplsShow = do
 --  let instn = NS (SN $ ImplementationN `{Show} [show `{{a}}]) !currentNamespace
   addImplementation `{Show} `{{x}} -- x is placeholder,  not working yet!
 
+-- An Elab script to insert plus Z (S Z)
+isrt : Elab ()
+isrt = do 
+  [x, y] <- apply `(plus) [False, False]
+  solve
+  focus x; fill `(Z); solve
+  focus y; fill `(S Z); solve
