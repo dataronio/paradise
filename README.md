@@ -10,4 +10,8 @@ free monads,category theories,elaboration reflection,ffi,and more!
 Emacs : Just open the file with idris-mode enabled,and load it
 
 
+# Contents
+
+DataType : basics,W-type
+
 # Contribution extremely welcomed!
